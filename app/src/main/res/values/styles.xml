@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!--  Menu  -->
     <style name="menuItemStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -11,15 +12,21 @@
         <item name="android:fontFamily">@font/montserrat_regular</item>
     </style>
 
-    <style name="imageCorner">
-        <item name="cornerSize">4%</item>
-    </style>
-
+    <!--  Why Us  -->
     <style name="whyUsImage">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">80dp</item>
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:layout_weight">0.3</item>
+    </style>
+
+    <style name="whyUsTextContainer">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_weight">0.7</item>
+        <item name="android:orientation">vertical</item>
     </style>
 
     <style name="whyUsTitle">
@@ -40,6 +47,37 @@
         <item name="android:textSize">12sp</item>
     </style>
 
+    <!--  View Heading  -->
+    <style name="viewHeading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montserrat_bolditalic</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="viewSeparatorLeft">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:background">#d6d6d8</item>
+        <item name="layout_constraintVertical_bias">0.55</item>
+    </style>
+
+    <style name="viewSeparatorRight">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:background">#d6d6d8</item>
+        <item name="layout_constraintVertical_bias">0.55</item>
+    </style>
+
+    <!--  Services  -->
+    <style name="imageCorner">
+        <item name="cornerSize">4%</item>
+    </style>
+
     <style name="serviceCardView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -55,6 +93,13 @@
         <item name="layout_constraintEnd_toEndOf">parent</item>
     </style>
 
+    <style name="serviceCardImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">220dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="shapeAppearance">@style/imageCorner</item>
+    </style>
+
     <style name="serviceCardTitle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -63,6 +108,14 @@
         <item name="android:fontFamily">@font/montserrat_bold</item>
         <item name="android:textColor">#29627d</item>
         <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="serviceCardSeparator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:background">#d6d6d8</item>
     </style>
 
     <style name="serviceCardText">
@@ -89,53 +142,5 @@
         <item name="android:textSize">12sp</item>
     </style>
 
-    <style name="serviceCardSeparator">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">2dp</item>
-        <item name="android:layout_marginTop">8dp</item>
-        <item name="android:layout_marginBottom">8dp</item>
-        <item name="android:background">#d6d6d8</item>
-    </style>
-
-    <style name="serviceCardImage">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">220dp</item>
-        <item name="android:scaleType">fitXY</item>
-        <item name="shapeAppearance">@style/imageCorner</item>
-    </style>
-
-    <style name="whyUsTextContainer">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:layout_marginStart">8dp</item>
-        <item name="android:layout_weight">0.7</item>
-        <item name="android:orientation">vertical</item>
-    </style>
-
-    <style name="viewSeparatorLeft">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">2dp</item>
-        <item name="android:layout_marginEnd">8dp</item>
-        <item name="android:background">#d6d6d8</item>
-        <item name="layout_constraintVertical_bias">0.55</item>
-    </style>
-
-    <style name="viewSeparatorRight">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">2dp</item>
-        <item name="android:layout_marginStart">8dp</item>
-        <item name="android:background">#d6d6d8</item>
-        <item name="layout_constraintVertical_bias">0.55</item>
-    </style>
-
-    <style name="viewHeading">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:fontFamily">@font/montserrat_bolditalic</item>
-        <item name="android:textAlignment">center</item>
-        <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">18sp</item>
-    </style>
 
 </resources>

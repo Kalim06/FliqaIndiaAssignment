@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
 import com.example.fliqaindiaassignment.R
 import com.example.fliqaindiaassignment.databinding.FragmentHomeImageBinding
 
@@ -31,7 +32,12 @@ class HomeImageFragment : Fragment() {
         )
 
         val position = requireArguments().getInt(ARG_POSITION)
-        binding.homeSlidingImageView.loadImage(homeImages[position])
+        Glide.with(this)
+            .load(homeImages[position])
+            .placeholder(R.drawable.loading_animation)
+            .error(R.drawable.broken_image)
+            .centerCrop()
+            .into(binding.homeSlidingImageView)
     }
 
     companion object {
