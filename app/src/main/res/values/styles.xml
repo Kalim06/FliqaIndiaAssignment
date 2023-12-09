@@ -17,7 +17,7 @@
 
     <style name="whyUsImage">
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">80dp</item>
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:layout_weight">0.3</item>
     </style>
@@ -102,6 +102,15 @@
         <item name="android:layout_height">220dp</item>
         <item name="android:scaleType">fitXY</item>
         <item name="shapeAppearance">@style/imageCorner</item>
+    </style>
+
+    <style name="whyUsTextContainer">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_weight">0.7</item>
+        <item name="android:orientation">vertical</item>
     </style>
 
 </resources>

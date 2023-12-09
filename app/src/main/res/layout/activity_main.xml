@@ -109,6 +109,8 @@
 
                 <include layout="@layout/services" />
 
+                <include layout="@layout/gallery" />
+
             </LinearLayout>
 
         </LinearLayout>
