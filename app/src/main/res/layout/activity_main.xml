@@ -104,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <include layout="@layout/about_us" />
+                <include layout="@layout/why_us" />
 
             </LinearLayout>
 
