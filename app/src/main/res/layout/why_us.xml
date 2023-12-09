@@ -57,10 +57,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="0.3"
+            style="@style/whyUsImage"
             android:src="@drawable/services_img_1" />
 
         <LinearLayout
@@ -70,22 +67,12 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="24*7 Services"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
+                style="@style/whyUsTitle"
+                android:text="24*7 Services" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/montserrat_regular"
-                android:letterSpacing="0.05"
-                android:text="@string/services_bio_1"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
+                style="@style/whyUsInfo"
+                android:text="@string/services_bio_1" />
         </LinearLayout>
     </LinearLayout>
 
@@ -96,10 +83,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="0.3"
+            style="@style/whyUsImage"
             android:src="@drawable/services_img_2" />
 
         <LinearLayout
@@ -109,22 +93,12 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="Affordable Packages"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
+                style="@style/whyUsTitle"
+                android:text="Affordable Packages" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/montserrat_regular"
-                android:letterSpacing="0.05"
-                android:text="@string/services_bio_2"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
+                style="@style/whyUsInfo"
+                android:text="@string/services_bio_2" />
         </LinearLayout>
     </LinearLayout>
 
@@ -135,10 +109,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="0.3"
+            style="@style/whyUsImage"
             android:src="@drawable/services_img_3" />
 
         <LinearLayout
@@ -148,22 +119,12 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="Proven Expertise"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
+                style="@style/whyUsTitle"
+                android:text="Proven Expertise" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/montserrat_regular"
-                android:letterSpacing="0.05"
-                android:text="@string/services_bio_3"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
+                style="@style/whyUsInfo"
+                android:text="@string/services_bio_3" />
         </LinearLayout>
     </LinearLayout>
 
@@ -174,10 +135,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="0.3"
+            style="@style/whyUsImage"
             android:src="@drawable/services_img_4" />
 
         <LinearLayout
@@ -187,22 +145,12 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="Award Winning Teams"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
+                style="@style/whyUsTitle"
+                android:text="Award Winning Teams" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/montserrat_regular"
-                android:letterSpacing="0.05"
-                android:text="@string/services_bio_4"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
+                style="@style/whyUsInfo"
+                android:text="@string/services_bio_4" />
         </LinearLayout>
     </LinearLayout>
 
@@ -213,10 +161,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="0.3"
+            style="@style/whyUsImage"
             android:src="@drawable/services_img_5" />
 
         <LinearLayout
@@ -226,22 +171,12 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="Creative Vision"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
+                style="@style/whyUsTitle"
+                android:text="Creative Vision" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/montserrat_regular"
-                android:letterSpacing="0.05"
-                android:text="@string/services_bio_5"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
+                style="@style/whyUsInfo"
+                android:text="@string/services_bio_5" />
         </LinearLayout>
     </LinearLayout>
 
@@ -253,10 +188,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="0.3"
+            style="@style/whyUsImage"
             android:src="@drawable/services_img_6" />
 
         <LinearLayout
@@ -266,22 +198,12 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="Customized Packages"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
+                style="@style/whyUsTitle"
+                android:text="Customized Packages" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/montserrat_regular"
-                android:letterSpacing="0.05"
-                android:text="@string/services_bio_6"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
+                style="@style/whyUsInfo"
+                android:text="@string/services_bio_6" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
