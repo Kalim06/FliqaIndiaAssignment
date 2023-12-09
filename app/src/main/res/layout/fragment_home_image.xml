@@ -9,6 +9,7 @@
         android:id="@+id/homeSlidingImageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="@string/home_images" />
+        android:contentDescription="@string/home_images"
+        android:scaleType="fitXY" />
 
 </FrameLayout>

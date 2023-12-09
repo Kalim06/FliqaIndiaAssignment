@@ -66,10 +66,9 @@
             layout="@layout/menu" />
     </androidx.cardview.widget.CardView>
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topBarContainer">
 
@@ -81,8 +80,7 @@
             <RelativeLayout
                 android:id="@+id/homeContainer"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.6">
+                android:layout_height="300dp">
 
                 <androidx.viewpager2.widget.ViewPager2
                     android:id="@+id/homeViewPager"
@@ -100,13 +98,16 @@
                     android:orientation="horizontal" />
             </RelativeLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
+                android:id="@+id/viewsContainer"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.4">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                <include layout="@layout/about_us" />
+
+            </LinearLayout>
 
         </LinearLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

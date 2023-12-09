@@ -10,4 +10,12 @@
     <string name="blog">Blog</string>
     <string name="about_us">About Us</string>
     <string name="home_images">Home Images</string>
+    <string name="why_choose_us">Why Choose Us</string>
+    <string name="about_us_bio">FliqaIndia is one of the leading creative platforms in India where you can get everything under one roof. We provide 24*7 Photography services., whether it could be wedding photography or a destination shoot. We also provide you with a wide range of graphic design services, full-day photography, music video shoot and many more. You can book a free consultation today to see how passionately our teams work.\nCheckout our lists of services.</string>
+    <string name="services_bio_1">We provide 24*7 Photography services, whether it could be wedding photography or a destination shoot</string>
+    <string name="services_bio_2">Quality photography at a price that fits your budget. Our affordable packages ensure you get exceptional service.</string>
+    <string name="services_bio_3">With a track record of excellence, our team\'s proven expertise ensures that every moment is captured with precision and skill.</string>
+    <string name="services_bio_4">Award-winning teams bring unmatched expertise and creativity to every photo, ensuring your moments are captured.</string>
+    <string name="services_bio_5">We capture moments with an artistic flair, ensuring your memories are transformed into timeless works of art.</string>
+    <string name="services_bio_6">Our team offers customized packages specific requirements, ensuring you get the perfect coverage for your special moments.</string>
 </resources>
