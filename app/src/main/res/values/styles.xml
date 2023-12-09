@@ -11,4 +11,8 @@
         <item name="android:fontFamily">@font/montserrat_regular</item>
     </style>
 
+    <style name="imageCorner" parent="">
+        <item name="cornerSize">4%</item>
+    </style>
+
 </resources>
