@@ -11,38 +11,25 @@
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_bolditalic"
+        style="@style/viewHeading"
         android:text="What We Offer"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginEnd="8dp"
-        android:background="#d6d6d8"
+        style="@style/viewSeparatorLeft"
         app:layout_constraintBottom_toBottomOf="@+id/textView1"
         app:layout_constraintEnd_toStartOf="@+id/textView1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView1"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintTop_toTopOf="@+id/textView1" />
 
     <View
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginStart="8dp"
-        android:background="#d6d6d8"
+        style="@style/viewSeparatorRight"
         app:layout_constraintBottom_toBottomOf="@+id/textView1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/textView1"
-        app:layout_constraintTop_toTopOf="@+id/textView1"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintTop_toTopOf="@+id/textView1" />
 
     <TextView
         android:id="@+id/textView2"

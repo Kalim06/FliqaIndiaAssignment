@@ -60,9 +60,9 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_marginTop">16dp</item>
-        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
         <item name="android:textColor">#29627d</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">14sp</item>
     </style>
 
     <style name="serviceCardText">
@@ -111,6 +111,31 @@
         <item name="android:layout_marginStart">8dp</item>
         <item name="android:layout_weight">0.7</item>
         <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="viewSeparatorLeft">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:background">#d6d6d8</item>
+        <item name="layout_constraintVertical_bias">0.55</item>
+    </style>
+
+    <style name="viewSeparatorRight">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:background">#d6d6d8</item>
+        <item name="layout_constraintVertical_bias">0.55</item>
+    </style>
+
+    <style name="viewHeading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montserrat_bolditalic</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
 </resources>
