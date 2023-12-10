@@ -2,7 +2,9 @@ package com.example.fliqaindiaassignment.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import androidx.recyclerview.widget.RecyclerView
+import com.example.fliqaindiaassignment.R
 import com.example.fliqaindiaassignment.databinding.GalleryItemBinding
 import com.example.fliqaindiaassignment.utils.GalleryModel
 
@@ -20,6 +22,12 @@ class GalleryAdapter : RecyclerView.Adapter<GalleryAdapter.ViewHolder>() {
             item: GalleryModel
         ) {
             binding.galleryImages = item
+            binding.galleryImageView.startAnimation(
+                AnimationUtils.loadAnimation(
+                    binding.root.context,
+                    R.anim.fade_in
+                )
+            )
             binding.executePendingBindings()
         }
 

@@ -21,7 +21,6 @@ fun ShapeableImageView.setGalleryImage(item: GalleryModel?) {
         Glide.with(this)
             .load(it.image)
             .centerCrop()
-            .transition(DrawableTransitionOptions.withCrossFade(100))
             .into(this)
     }
 }
