@@ -119,6 +119,10 @@
                     android:id="@+id/offersLayout"
                     layout="@layout/offers" />
 
+                <include
+                    android:id="@+id/weddingLayout"
+                    layout="@layout/wedding" />
+
             </LinearLayout>
 
         </LinearLayout>

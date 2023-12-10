@@ -15,3 +15,5 @@ data class ServicesModel(
 data class GalleryModel(var image: Int)
 
 data class OfferModel(var image: Int, var title: String)
+
+data class WeddingModel(var image: Int, var title: String)

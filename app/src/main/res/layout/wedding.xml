@@ -7,12 +7,12 @@
     android:background="@color/backgroundColor"
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
-    tools:ignore="HardcodedText,ContentDescription">
+    tools:ignore="HardcodedText">
 
     <TextView
         android:id="@+id/textView1"
         style="@style/viewHeading"
-        android:text="What We Offer"
+        android:text="Real Wedding"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,16 +31,8 @@
         app:layout_constraintStart_toEndOf="@id/textView1"
         app:layout_constraintTop_toTopOf="@+id/textView1" />
 
-    <TextView
-        android:id="@+id/textView2"
-        style="@style/viewInfo"
-        android:text="We offer a wide range of services to\nyour preferences..."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/serviceRecyclerView"
+        android:id="@+id/weddingRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -48,8 +40,6 @@
         android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

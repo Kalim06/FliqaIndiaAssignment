@@ -80,5 +80,18 @@ object Constants {
         return dataList
     }
 
+    fun getWeddings(): List<WeddingModel> {
+
+        val dataList = mutableListOf<WeddingModel>()
+
+        dataList.add(WeddingModel(R.drawable.wedding_img_1,"Bijoy & Shreya"))
+        dataList.add(WeddingModel(R.drawable.wedding_img_2,"Monoj & Riyan"))
+        dataList.add(WeddingModel(R.drawable.wedding_img_3,"Rishi & Adrita"))
+        dataList.add(WeddingModel(R.drawable.wedding_img_4,"Shuful & Mita"))
+        dataList.add(WeddingModel(R.drawable.wedding_img_5,"Rahit & Arisha"))
+
+        return dataList
+    }
+
 
 }

@@ -27,3 +27,11 @@ fun ShapeableImageView.setOffersImage(item: OfferModel?) {
         setImageResource(it.image)
     }
 }
+
+//Wedding
+@BindingAdapter("weddingImage")
+fun ShapeableImageView.setWeddingImage(item: WeddingModel?) {
+    item?.let {
+        setImageResource(it.image)
+    }
+}

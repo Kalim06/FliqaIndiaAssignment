@@ -12,6 +12,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.example.fliqaindiaassignment.adapters.GalleryAdapter
 import com.example.fliqaindiaassignment.adapters.OffersAdapter
 import com.example.fliqaindiaassignment.adapters.ServicesAdapter
+import com.example.fliqaindiaassignment.adapters.WeddingAdapter
 import com.example.fliqaindiaassignment.databinding.ActivityMainBinding
 import com.example.fliqaindiaassignment.home.HomeImageAdapter
 import com.example.fliqaindiaassignment.utils.Constants
@@ -71,6 +72,14 @@ class MainActivity : AppCompatActivity() {
         //Set Data
         val offersList = Constants.getOffers()
         offersAdapter.setData(offersList)
+
+        //Wedding RecyclerView
+        val weddingAdapter = WeddingAdapter()
+        binding.weddingLayout.weddingRecyclerView.adapter = weddingAdapter
+
+        //Set Data
+        val weddingList = Constants.getWeddings()
+        weddingAdapter.setData(weddingList)
     }
 
     private fun setUpSlidingViewPager() {
