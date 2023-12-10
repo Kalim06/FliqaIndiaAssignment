@@ -107,9 +107,13 @@
 
                 <include layout="@layout/why_us" />
 
-                <include layout="@layout/services" />
+                <include
+                    android:id="@+id/servicesLayout"
+                    layout="@layout/services" />
 
-                <include layout="@layout/gallery" />
+                <include
+                    android:id="@+id/galleryLayout"
+                    layout="@layout/gallery" />
 
             </LinearLayout>
 

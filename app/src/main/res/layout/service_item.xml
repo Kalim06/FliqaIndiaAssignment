@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="services"
+            type="com.example.fliqaindiaassignment.utils.ServicesModel" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/serviceCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/serviceImage"
+                style="@style/serviceCardImage"
+                app:servicesImage="@{services}"/>
+
+            <TextView
+                android:id="@+id/serviceTitle"
+                style="@style/serviceCardTitle"
+                android:text="@{services.title}" />
+
+            <View style="@style/serviceCardSeparator" />
+
+            <TextView
+                android:id="@+id/serviceText1"
+                style="@style/serviceCardText"
+                android:text="@{services.service1}" />
+
+            <TextView
+                android:id="@+id/serviceText2"
+                style="@style/serviceCardText"
+                android:text="@{services.service2}" />
+
+            <TextView
+                android:id="@+id/serviceText3"
+                style="@style/serviceCardText"
+                android:text="@{services.service3}" />
+
+            <TextView
+                android:id="@+id/serviceText4"
+                style="@style/serviceCardText"
+                android:text="@{services.service4}" />
+
+            <TextView
+                android:id="@+id/serviceText5"
+                style="@style/serviceCardText"
+                android:text="@{services.service5}" />
+
+            <TextView
+                android:id="@+id/serviceText6"
+                style="@style/serviceCardText"
+                android:text="@{services.service6}" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/serviceCardBtn"
+                android:text="@string/know_more" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>
