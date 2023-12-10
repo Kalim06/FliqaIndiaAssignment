@@ -2,8 +2,6 @@ package com.example.fliqaindiaassignment.utils
 
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.google.android.material.imageview.ShapeableImageView
 
 //Services
@@ -18,9 +16,14 @@ fun ImageView.setServicesImage(item: ServicesModel?) {
 @BindingAdapter("galleryImage")
 fun ShapeableImageView.setGalleryImage(item: GalleryModel?) {
     item?.let {
-        Glide.with(this)
-            .load(it.image)
-            .centerCrop()
-            .into(this)
+        setImageResource(it.image)
+    }
+}
+
+//Offers
+@BindingAdapter("offersImage")
+fun ShapeableImageView.setOffersImage(item: OfferModel?) {
+    item?.let {
+        setImageResource(it.image)
     }
 }

@@ -10,7 +10,7 @@ object Constants {
 
         dataList.add(
             ServicesModel(
-                R.drawable.event_img,
+                R.drawable.services_img_1,
                 "Events",
                 "Wedding Photography",
                 "Pre-Wedding Shoot",
@@ -23,7 +23,7 @@ object Constants {
 
         dataList.add(
             ServicesModel(
-                R.drawable.photography,
+                R.drawable.services_img_2,
                 "24*7 Photography",
                 "Full Day Shoot",
                 "Half Day Shoot",
@@ -36,7 +36,7 @@ object Constants {
 
         dataList.add(
             ServicesModel(
-                R.drawable.graphics,
+                R.drawable.services_img_3,
                 "Graphics Designing",
                 "Poster Designing",
                 "Logo Designing",
@@ -66,5 +66,19 @@ object Constants {
 
         return dataList
     }
+
+    fun getOffers(): List<OfferModel> {
+
+        val dataList = mutableListOf<OfferModel>()
+
+        dataList.add(OfferModel(R.drawable.offers_img_1, "Wedding Shoot"))
+        dataList.add(OfferModel(R.drawable.offers_img_2, "Pre-Wedding Shoot"))
+        dataList.add(OfferModel(R.drawable.offers_img_3, "Birthday Shoot"))
+        dataList.add(OfferModel(R.drawable.offers_img_4, "Product Shoot"))
+        dataList.add(OfferModel(R.drawable.offers_img_5, "UI/UX Design"))
+
+        return dataList
+    }
+
 
 }

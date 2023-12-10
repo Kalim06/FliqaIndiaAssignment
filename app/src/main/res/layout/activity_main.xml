@@ -115,6 +115,10 @@
                     android:id="@+id/galleryLayout"
                     layout="@layout/gallery" />
 
+                <include
+                    android:id="@+id/offersLayout"
+                    layout="@layout/offers" />
+
             </LinearLayout>
 
         </LinearLayout>
