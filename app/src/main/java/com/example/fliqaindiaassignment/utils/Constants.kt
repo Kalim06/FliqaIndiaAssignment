@@ -149,11 +149,11 @@ object Constants {
 
         val dataList = mutableListOf<ClientsModel>()
 
-        dataList.add(ClientsModel(R.drawable.client_img1, "Aditya", "Wedding", "client 1"))
-        dataList.add(ClientsModel(R.drawable.client_img2, "Rahul", "Pre Wedding", "client 2"))
-        dataList.add(ClientsModel(R.drawable.client_img3, "Aliyna", "Product", "client 3"))
-        dataList.add(ClientsModel(R.drawable.client_img4, "Monoj", "Corporate", "client 4"))
-        dataList.add(ClientsModel(R.drawable.client_img5, "Sanjida", "Corporate", "client 5"))
+        dataList.add(ClientsModel(R.drawable.client_img1, "Aditya", "Wedding", "yVvA76R8i_0"))
+        dataList.add(ClientsModel(R.drawable.client_img2, "Rahul", "Pre Wedding", "aK55rsdIdwc"))
+        dataList.add(ClientsModel(R.drawable.client_img3, "Aliyna", "Product", "2AYt-RZdAbE"))
+        dataList.add(ClientsModel(R.drawable.client_img4, "Monoj", "Corporate", "2AYt-RZdAbE"))
+        dataList.add(ClientsModel(R.drawable.client_img5, "Sanjida", "Corporate", "2AYt-RZdAbE"))
 
         return dataList
     }

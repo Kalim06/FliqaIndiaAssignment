@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.fliqaindiaassignment.databinding.ClientItemBinding
 import com.example.fliqaindiaassignment.utils.ClientsModel
 
-class ClientAdapter : RecyclerView.Adapter<ClientAdapter.ViewHolder>() {
+class ClientAdapter(private val clickListener: ClientClickListener) : RecyclerView.Adapter<ClientAdapter.ViewHolder>() {
 
     private var data = listOf<ClientsModel>()
     internal fun setData(dataList: List<ClientsModel>) {
@@ -17,9 +17,11 @@ class ClientAdapter : RecyclerView.Adapter<ClientAdapter.ViewHolder>() {
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(
-            item: ClientsModel
+            item: ClientsModel,
+            clickListener: ClientClickListener
         ) {
             binding.client = item
+            binding.clickListener = clickListener
             binding.executePendingBindings()
         }
 
@@ -39,10 +41,12 @@ class ClientAdapter : RecyclerView.Adapter<ClientAdapter.ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item = data[position]
-        holder.bind(item)
+        holder.bind(data[position],clickListener)
     }
 
     override fun getItemCount() = data.size
+}
 
+class ClientClickListener(val clickListener: (link: String) -> Unit) {
+    fun onClick(client: ClientsModel) = clickListener(client.link)
 }

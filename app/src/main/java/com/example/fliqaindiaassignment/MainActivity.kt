@@ -13,6 +13,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.example.fliqaindiaassignment.adapters.BlogsAdapter
 import com.example.fliqaindiaassignment.adapters.CategoryAdapter
 import com.example.fliqaindiaassignment.adapters.ClientAdapter
+import com.example.fliqaindiaassignment.adapters.ClientClickListener
 import com.example.fliqaindiaassignment.adapters.CoursesAdapter
 import com.example.fliqaindiaassignment.adapters.GalleryAdapter
 import com.example.fliqaindiaassignment.adapters.LocationAdapter
@@ -22,6 +23,7 @@ import com.example.fliqaindiaassignment.adapters.WeddingAdapter
 import com.example.fliqaindiaassignment.databinding.ActivityMainBinding
 import com.example.fliqaindiaassignment.home.HomeImageAdapter
 import com.example.fliqaindiaassignment.utils.Constants
+import com.example.fliqaindiaassignment.utils.watchYoutube
 import java.util.Timer
 import java.util.TimerTask
 
@@ -104,7 +106,10 @@ class MainActivity : AppCompatActivity() {
         blogsAdapter.setData(blogsList)
 
         //Client RecyclerView
-        val clientAdapter = ClientAdapter()
+        val clientAdapter =
+            ClientAdapter(ClientClickListener { link ->
+                watchYoutube(link)
+            })
         binding.clientsLayout.clientsRecyclerView.adapter = clientAdapter
 
         //Set Data
