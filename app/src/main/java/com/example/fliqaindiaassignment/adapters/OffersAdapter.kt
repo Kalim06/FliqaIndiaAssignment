@@ -3,7 +3,7 @@ package com.example.fliqaindiaassignment.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.fliqaindiaassignment.databinding.OffersItemBinding
+import com.example.fliqaindiaassignment.databinding.OfferItemBinding
 import com.example.fliqaindiaassignment.utils.OfferModel
 
 class OffersAdapter : RecyclerView.Adapter<OffersAdapter.ViewHolder>() {
@@ -13,7 +13,7 @@ class OffersAdapter : RecyclerView.Adapter<OffersAdapter.ViewHolder>() {
         this.data = dataList
     }
 
-    class ViewHolder private constructor(private val binding: OffersItemBinding) :
+    class ViewHolder private constructor(private val binding: OfferItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(
@@ -27,7 +27,7 @@ class OffersAdapter : RecyclerView.Adapter<OffersAdapter.ViewHolder>() {
             fun from(parent: ViewGroup): ViewHolder {
 
                 val layoutInflater = LayoutInflater.from(parent.context)
-                val binding = OffersItemBinding.inflate(layoutInflater, parent, false)
+                val binding = OfferItemBinding.inflate(layoutInflater, parent, false)
 
                 return ViewHolder(binding)
             }
