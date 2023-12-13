@@ -19,3 +19,5 @@ data class OfferModel(var image: Int, var title: String)
 data class WeddingModel(var image: Int, var title: String)
 
 data class CoursesModel(var image: Int, var title: String)
+
+data class BlogsModel(var image: Int, var title: String, var info: String)

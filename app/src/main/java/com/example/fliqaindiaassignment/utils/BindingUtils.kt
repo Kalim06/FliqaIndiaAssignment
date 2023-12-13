@@ -43,3 +43,11 @@ fun ShapeableImageView.setCourseImage(item: CoursesModel?) {
         setImageResource(it.image)
     }
 }
+
+//Blogs
+@BindingAdapter("blogImage")
+fun ShapeableImageView.setBlogImage(item: BlogsModel?) {
+    item?.let {
+        setImageResource(it.image)
+    }
+}

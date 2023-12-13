@@ -127,8 +127,11 @@
                     android:id="@+id/coursesLayout"
                     layout="@layout/courses" />
 
+                <include layout="@layout/about_us" />
+
                 <include
-                    layout="@layout/about_us" />
+                    android:id="@+id/blogsLayout"
+                    layout="@layout/blogs" />
 
             </LinearLayout>
 
