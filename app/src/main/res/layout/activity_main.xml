@@ -158,6 +158,8 @@
                     android:id="@+id/bottomLayout"
                     layout="@layout/bottom_view" />
 
+                <include layout="@layout/footer"/>
+
             </LinearLayout>
 
         </LinearLayout>

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="primary">#3a6e87</color>
     <color name="backgroundColor">#f5f5f6</color>
+    <color name="grey">#BABABA</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:ignore="PrivateResource">#f5f5f6
+    </color>
 </resources>
