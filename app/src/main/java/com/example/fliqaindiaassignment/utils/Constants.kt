@@ -145,5 +145,18 @@ object Constants {
         return dataList
     }
 
+    fun getClients(): List<ClientsModel> {
+
+        val dataList = mutableListOf<ClientsModel>()
+
+        dataList.add(ClientsModel(R.drawable.client_img1, "Aditya", "Wedding", "client 1"))
+        dataList.add(ClientsModel(R.drawable.client_img2, "Rahul", "Pre Wedding", "client 2"))
+        dataList.add(ClientsModel(R.drawable.client_img3, "Aliyna", "Product", "client 3"))
+        dataList.add(ClientsModel(R.drawable.client_img4, "Monoj", "Corporate", "client 4"))
+        dataList.add(ClientsModel(R.drawable.client_img5, "Sanjida", "Corporate", "client 5"))
+
+        return dataList
+    }
+
 
 }

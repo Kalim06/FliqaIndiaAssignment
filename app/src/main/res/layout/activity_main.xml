@@ -133,6 +133,10 @@
                     android:id="@+id/blogsLayout"
                     layout="@layout/blogs" />
 
+                <include
+                    android:id="@+id/clientsLayout"
+                    layout="@layout/clients" />
+
             </LinearLayout>
 
         </LinearLayout>
