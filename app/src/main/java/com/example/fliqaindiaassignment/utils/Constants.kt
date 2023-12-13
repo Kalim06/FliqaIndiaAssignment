@@ -158,5 +158,117 @@ object Constants {
         return dataList
     }
 
+    fun getCategories(): List<CategoriesModel> {
+
+        val dataList = mutableListOf<CategoriesModel>()
+
+        val photographyTypes = listOf(
+            "Wedding Photography",
+            "Portfolio Photography",
+            "Event Photography",
+            "Travel Photography",
+            "Wedding Videography",
+            "Stock Photography",
+            "Corporate Photography",
+            "Full Day Photography",
+            "Product Photography",
+            "Pre-Wedding Photography",
+            "Drone Videography",
+            "Half Day Photography",
+            "Birthday Photography",
+            "Fashion Photography",
+            "Model Photography",
+            "Underwater Photography"
+        )
+
+        for (type in photographyTypes) {
+            dataList.add(CategoriesModel(type))
+        }
+
+        return dataList
+    }
+
+    fun getLocations(): List<LocationModel> {
+
+        val dataList = mutableListOf<LocationModel>()
+
+        val locations = listOf(
+            "Agra",
+            "Munnar",
+            "Manali",
+            "Mumbai",
+            "Mount Abu",
+            "Vishakhapatnam",
+            "Chennai",
+            "Srinagar",
+            "Vaishno Devi",
+            "Madurai",
+            "Jaipur",
+            "Udaipur",
+            "Jaisalmer",
+            "Dalhousie",
+            "Alleppey",
+            "Amritsar",
+            "Leh Ladakh",
+            "New Delhi",
+            "Ooty",
+            "Lucknow",
+            "Tirupati",
+            "Nainital",
+            "Ranthambore",
+            "Shimla",
+            "Pondicherry",
+            "Hampi",
+            "Mahabalipuram",
+            "Jim Corbett",
+            "Kaziranga",
+            "Thekkady",
+            "Sanchi",
+            "Kutch",
+            "Aurangabad",
+            "Kasol",
+            "Bandhavgarh",
+            "Auli",
+            "Konark ",
+            "Shillong",
+            "Bangalore",
+            "Gwalior",
+            "Kanyakumari",
+            "Pushkar",
+            "Haridwar",
+            "Cherrapunjee",
+            "Bodh Gaya",
+            "Mysore",
+            "Goa",
+            "Lakshadweep",
+            "Gangtok",
+            "Mahabaleshwar",
+            "Kochi",
+            "Darjeeling",
+            "Chandigarh",
+            "Shirdi",
+            "Ahmedabad",
+            "Varanasi",
+            "Coorg",
+            "Kolkata",
+            "Rameswaram",
+            "Khajuraho",
+            "Hyderabad",
+            "Rishikesh",
+            "Kumarakom",
+            "Pune",
+            "Puri",
+            "Trivandrum",
+            "Almora",
+            "Mathura"
+        )
+
+        for (location in locations) {
+            dataList.add(LocationModel(location))
+        }
+
+        return dataList
+    }
+
 
 }

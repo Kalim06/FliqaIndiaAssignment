@@ -8,11 +8,14 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.viewpager2.widget.ViewPager2
 import com.example.fliqaindiaassignment.adapters.BlogsAdapter
+import com.example.fliqaindiaassignment.adapters.CategoryAdapter
 import com.example.fliqaindiaassignment.adapters.ClientAdapter
 import com.example.fliqaindiaassignment.adapters.CoursesAdapter
 import com.example.fliqaindiaassignment.adapters.GalleryAdapter
+import com.example.fliqaindiaassignment.adapters.LocationAdapter
 import com.example.fliqaindiaassignment.adapters.OffersAdapter
 import com.example.fliqaindiaassignment.adapters.ServicesAdapter
 import com.example.fliqaindiaassignment.adapters.WeddingAdapter
@@ -107,6 +110,23 @@ class MainActivity : AppCompatActivity() {
         //Set Data
         val clientList = Constants.getClients()
         clientAdapter.setData(clientList)
+
+        //Categories RecyclerView
+        val categoryAdapter = CategoryAdapter()
+        binding.bottomLayout.categoriesRecyclerView.adapter = categoryAdapter
+
+        //Set Data
+        val categoryList = Constants.getCategories()
+        categoryAdapter.setData(categoryList)
+
+        //Location RecyclerView
+        binding.bottomLayout.locationRecyclerView.layoutManager = GridLayoutManager(this, 2)
+        val locationAdapter = LocationAdapter()
+        binding.bottomLayout.locationRecyclerView.adapter = locationAdapter
+
+        //Set Data
+        val locationsList = Constants.getLocations()
+        locationAdapter.setData(locationsList)
     }
 
     private fun setUpSlidingViewPager() {
