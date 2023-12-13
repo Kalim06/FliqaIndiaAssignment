@@ -10,7 +10,7 @@ object Constants {
 
         dataList.add(
             ServicesModel(
-                R.drawable.services_img_1,
+                R.drawable.services_img1,
                 "Events",
                 "Wedding Photography",
                 "Pre-Wedding Shoot",
@@ -23,7 +23,7 @@ object Constants {
 
         dataList.add(
             ServicesModel(
-                R.drawable.services_img_2,
+                R.drawable.services_img2,
                 "24*7 Photography",
                 "Full Day Shoot",
                 "Half Day Shoot",
@@ -36,7 +36,7 @@ object Constants {
 
         dataList.add(
             ServicesModel(
-                R.drawable.services_img_3,
+                R.drawable.services_img3,
                 "Graphics Designing",
                 "Poster Designing",
                 "Logo Designing",
@@ -71,11 +71,11 @@ object Constants {
 
         val dataList = mutableListOf<OfferModel>()
 
-        dataList.add(OfferModel(R.drawable.offers_img_1, "Wedding Shoot"))
-        dataList.add(OfferModel(R.drawable.offers_img_2, "Pre-Wedding Shoot"))
-        dataList.add(OfferModel(R.drawable.offers_img_3, "Birthday Shoot"))
-        dataList.add(OfferModel(R.drawable.offers_img_4, "Product Shoot"))
-        dataList.add(OfferModel(R.drawable.offers_img_5, "UI/UX Design"))
+        dataList.add(OfferModel(R.drawable.offers_img1, "Wedding Shoot"))
+        dataList.add(OfferModel(R.drawable.offers_img2, "Pre-Wedding Shoot"))
+        dataList.add(OfferModel(R.drawable.offers_img3, "Birthday Shoot"))
+        dataList.add(OfferModel(R.drawable.offers_img4, "Product Shoot"))
+        dataList.add(OfferModel(R.drawable.offers_img5, "UI/UX Design"))
 
         return dataList
     }
@@ -84,11 +84,11 @@ object Constants {
 
         val dataList = mutableListOf<WeddingModel>()
 
-        dataList.add(WeddingModel(R.drawable.wedding_img_1,"Bijoy & Shreya"))
-        dataList.add(WeddingModel(R.drawable.wedding_img_2,"Monoj & Riyan"))
-        dataList.add(WeddingModel(R.drawable.wedding_img_3,"Rishi & Adrita"))
-        dataList.add(WeddingModel(R.drawable.wedding_img_4,"Shuful & Mita"))
-        dataList.add(WeddingModel(R.drawable.wedding_img_5,"Rahit & Arisha"))
+        dataList.add(WeddingModel(R.drawable.wedding_img1,"Bijoy & Shreya"))
+        dataList.add(WeddingModel(R.drawable.wedding_img2,"Monoj & Riyan"))
+        dataList.add(WeddingModel(R.drawable.wedding_img3,"Rishi & Adrita"))
+        dataList.add(WeddingModel(R.drawable.wedding_img4,"Shuful & Mita"))
+        dataList.add(WeddingModel(R.drawable.wedding_img5,"Rahit & Arisha"))
 
         return dataList
     }
