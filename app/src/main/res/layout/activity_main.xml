@@ -123,6 +123,10 @@
                     android:id="@+id/weddingLayout"
                     layout="@layout/wedding" />
 
+                <include
+                    android:id="@+id/coursesLayout"
+                    layout="@layout/courses" />
+
             </LinearLayout>
 
         </LinearLayout>

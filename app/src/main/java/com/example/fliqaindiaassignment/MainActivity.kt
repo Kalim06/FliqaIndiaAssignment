@@ -9,6 +9,7 @@ import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.viewpager2.widget.ViewPager2
+import com.example.fliqaindiaassignment.adapters.CoursesAdapter
 import com.example.fliqaindiaassignment.adapters.GalleryAdapter
 import com.example.fliqaindiaassignment.adapters.OffersAdapter
 import com.example.fliqaindiaassignment.adapters.ServicesAdapter
@@ -80,6 +81,14 @@ class MainActivity : AppCompatActivity() {
         //Set Data
         val weddingList = Constants.getWeddings()
         weddingAdapter.setData(weddingList)
+
+        //Courses RecyclerView
+        val courAdapter = CoursesAdapter()
+        binding.coursesLayout.coursesRecyclerView.adapter = courAdapter
+
+        //Set Data
+        val coursesList = Constants.getCourses()
+        courAdapter.setData(coursesList)
     }
 
     private fun setUpSlidingViewPager() {

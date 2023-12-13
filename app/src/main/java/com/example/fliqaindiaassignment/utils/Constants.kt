@@ -84,11 +84,24 @@ object Constants {
 
         val dataList = mutableListOf<WeddingModel>()
 
-        dataList.add(WeddingModel(R.drawable.wedding_img1,"Bijoy & Shreya"))
-        dataList.add(WeddingModel(R.drawable.wedding_img2,"Monoj & Riyan"))
-        dataList.add(WeddingModel(R.drawable.wedding_img3,"Rishi & Adrita"))
-        dataList.add(WeddingModel(R.drawable.wedding_img4,"Shuful & Mita"))
-        dataList.add(WeddingModel(R.drawable.wedding_img5,"Rahit & Arisha"))
+        dataList.add(WeddingModel(R.drawable.wedding_img1, "Bijoy & Shreya"))
+        dataList.add(WeddingModel(R.drawable.wedding_img2, "Monoj & Riyan"))
+        dataList.add(WeddingModel(R.drawable.wedding_img3, "Rishi & Adrita"))
+        dataList.add(WeddingModel(R.drawable.wedding_img4, "Shuful & Mita"))
+        dataList.add(WeddingModel(R.drawable.wedding_img5, "Rahit & Arisha"))
+
+        return dataList
+    }
+
+    fun getCourses(): List<CoursesModel> {
+
+        val dataList = mutableListOf<CoursesModel>()
+
+        dataList.add(CoursesModel(R.drawable.course_img1, "Photography"))
+        dataList.add(CoursesModel(R.drawable.course_img2, "Videography"))
+        dataList.add(CoursesModel(R.drawable.course_img3, "Cinematography"))
+        dataList.add(CoursesModel(R.drawable.course_img4, "Animation"))
+        dataList.add(CoursesModel(R.drawable.course_img5, "Designing"))
 
         return dataList
     }
